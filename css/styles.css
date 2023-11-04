@@ -305,7 +305,7 @@ ul {
 }
 
 
-/* Modal form */
+/*Модальне вікно */
 
 .backdrop {
     position: fixed;
@@ -369,7 +369,40 @@ ul {
     border-radius: 50px;
     background-color: transparent;
     cursor: pointer;
+    transition: fill 250ms var(--timing-function),
+        opacity 250ms var(--timing-function);
 }
+
+.modal-btn:focus,
+.modal-btn:hover {
+    fill: #2196F3;
+}
+.modal-section {
+    padding-top: 40px;
+    padding-right: 39px;
+    padding-bottom: ;
+    padding-left: 41px;
+}
+
+
+.lets {
+    color: #212121;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1,15;
+    letter-spacing: 0.6px;
+}
+
+.wrapper-input {
+    position: relative;
+}
+
+/* .svg-input {
+    position: absolute;
+} */
+
+
 
 
 
@@ -661,102 +694,6 @@ transition: color 250ms var(--timing-function);
 }
 
 
-/* Footer */
-
-.footer-section {
-    background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-
-.footer-adress {
-    color: #FFF;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1, 7;
-    letter-spacing: 0.42px;
-}
-
-address {
-    margin-top: 28px;
-}
-
-.footer-contacts {
-    margin-top: 12px;
-}
-
-.footer-contacts a {
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.7;
-    font-weight: 400;
-    letter-spacing: 0.42px;
-    text-decoration: none;
-    transition: color 250ms var(--timing-function);
-}
-
-.footer-contacts :hover,
-.footer-contacts :focus {
-    color: #2196F3;
-}
-
-.footer-contacts .contacts-point + .contacts-point {
-    margin-top: 12px;
-}
-
-.footer-box {
-    display: flex;
-    align-items: baseline;
-}
- 
-.footer-part + .footer-part {
-    margin-left: 70px;
-}
-
-.social-title {
-    padding-top: 0;
-    margin-top: 0;
-    color: #FFF;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-
-
-.attend {
-    display: flex;
-    align-items: baseline;
-    margin-top: 20px;
-    gap: 10px;
-}
-
-
-.ellipse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50px;
-    background-color: #FFFFFF1A;
-    transition: background-color 250ms var(--timing-function);
-}
-
-.ellipse:hover,
-.ellipse:focus {
-    background-color: #2196F3;
-}
-
-.social-footer {
-fill: #FFFFFF;
-margin-right: 0;
-margin-bottom: 0;
-}
-
 
 /* Стили для portfolio */
 
@@ -922,3 +859,127 @@ margin-bottom: 0;
     margin-bottom: 0;
 }
 
+
+
+/* Footer */
+
+.footer-section {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.footer-adress {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1, 7;
+    letter-spacing: 0.42px;
+}
+
+address {
+    margin-top: 28px;
+}
+
+.footer-contacts {
+    margin-top: 12px;
+}
+
+.footer-contacts a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+}
+
+.footer-contacts :hover,
+.footer-contacts :focus {
+    color: #2196F3;
+}
+
+.footer-contacts .contacts-point+.contacts-point {
+    margin-top: 12px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-part+.footer-part {
+    margin-left: 70px;
+}
+
+.social-title {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+
+.attend {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+
+.ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: #FFFFFF1A;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.ellipse:hover,
+.ellipse:focus {
+    background-color: #2196F3;
+}
+
+.social-footer {
+    fill: #FFFFFF;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+
+.subscription {
+
+}
+
+.form-group {
+
+}
+
+.form-label {
+    
+}
+
+.footer-input {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
