@@ -77,37 +77,42 @@
                 </svg>
               </button>
               <div class="modal-section">
-              <form action="">
-                <b class="lets">Залиште свої дані, ми вам передзвонимо</b>
-              <label for="">
-                <span>Ім'я</span>
-                <input class="wrapper-input" type="text" placeholder="">
-                                <svg width="18" height="18">
-                                  <use href=""></use>
-                                </svg>
-              </label>            
-              <label for="">
-                <span>Телефон</span>
-                <input class="wrapper-input" type="tel" placeholder="">
-                                <svg width="18" height="18">
-                                  <use href=""></use>
-                                </svg>
-              </label>
-              <label for="">
-                <span>Пошта</span>
-            <input class="wrapper-input" type="email" placeholder="">
-                            <svg width="18" height="18">
-                              <use href=""></use>
-                            </svg>
-              </label>
-              <label for="">
-                <span>Коментар</span>
-<textarea name="" id="" rows="5" placeholder="Введіть текст"></textarea>
-              </label>
-                  
-                  <input type="checkbox">   
-              </form>
-              <button class="button-studio" type="submit">Відправити</button>
+                <form action="">
+                  <b class="lets">Залиште свої дані, ми вам передзвонимо</b>
+                  <label>
+                    <span class="info-point">Ім'я</span>
+                    <input class="wrapper-input" type="text" placeholder="" />
+                    <svg width="18" height="18">
+                      <use href=""></use>
+                    </svg>
+                  </label>
+                  <label>
+                    <span class="info-point">Телефон</span>
+                    <input class="wrapper-input" type="tel" placeholder="" />
+                    <svg width="18" height="18">
+                      <use href=""></use>
+                    </svg>
+                  </label>
+                  <label>
+                    <span class="info-point">Пошта</span>
+                    <input class="wrapper-input" type="email" placeholder="" />
+                    <svg width="18" height="18">
+                      <use href=""></use>
+                    </svg>
+                  </label>
+                  <label>
+                    <span class="info-point">Коментар</span>
+                    <textarea
+                      class="form-message"
+                      name="user-message"
+                      rows="5"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </label>
+
+                  <input type="checkbox" />
+                </form>
+                <button class="button-studio" type="submit">Відправити</button>
               </div>
             </div>
           </div>
@@ -571,16 +576,27 @@
           </ul>
         </div>
         <!-- Форма для розсилки -->
-        <div class="subscription">
+        <div class="footer-submit">
           <b class="social-title">підпишіться на розсилку</b>
-          <form class="email-form" name="email-form" action="./js/method.js" method="post">
-            <label class="form-group"></span>
-              <input class="footer-input" type="email" id="user-mail" name="user-mail" placeholder="E-mail"/>
-            </label>
-          </form>
-        </div>
-        <div>
-          <button class="button-studio" type="submit">Підписатися</button>
+          <div class="subscription">
+            <form
+              class="email-form"
+              name="email-form"
+              action="./js/method.js"
+              method="post"
+            >
+              <label class="form-group">
+                <input
+                  class="footer-input"
+                  type="email"
+                  id="user-mail"
+                  name="user-mail"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
+            <button class="button-studio" type="submit">Підписатися</button>
+          </div>
         </div>
       </div>
     </footer>
