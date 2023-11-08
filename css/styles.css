@@ -294,7 +294,7 @@ ul {
     cursor: pointer;
     border-radius: 4px;
     border: 1px solid transparent;
-    padding: 10px 24px;
+    padding: 9px 24px;
     min-width: 200px;
     transition: color 250ms var(--timing-function);
 }
@@ -330,7 +330,7 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px;
+    padding: 40px 39px 40px 41px;
     transform: translate(-50%, -50%);
     width: 528px;
     background-color: #FFFFFF;
@@ -382,7 +382,7 @@ ul {
 
 
 .lets {
-    display: block;
+    margin-bottom: 2px;
     color: #212121;
     text-align: center;
     font-size: 20px;
@@ -411,7 +411,8 @@ ul {
 .wrapper-input:focus {
     outline: 1px solid var(--accent-color);
     outline-offset: -1px;
-}
+} 
+
 
 
 .form-modal-icon {
@@ -421,12 +422,24 @@ ul {
     fill: #212121;
 }
 
-
-.warning, .error {
-    position: absolute;
-    opacity: 0;
+.form-group:hover .form-modal-icon,
+.form-group:focus .form-modal-icon {
+    fill: #2196F3;
 }
 
+
+.form-group {
+    margin-top: 28px;
+}
+
+.form-group-massage {
+    margin-top: 28px;
+}
+
+.form-policy {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
 .form-group, 
 .form-group-massage,
@@ -444,7 +457,7 @@ font-size: 12px;
 font-weight: 400;
 line-height: 1.17;
 letter-spacing: 0.12px;
-transform: translateY(-20px);
+transform: translateY(-17px);
 }
 
 
@@ -507,6 +520,10 @@ transform: translateY(-20px);
 opacity: 1;
 }
 
+
+.contract {
+    color: var(--accent-color);
+}
 
 /* Section и Work */
 
@@ -1103,4 +1120,35 @@ address {
 .footer-input:focus {
     outline: 1px solid #2196F3;
     outline-offset: -1px;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+        background-color: var(--accent-color);
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.96px;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        padding: 9px 24px;
+        min-width: 200px;
+        height: 50px;
+        transition: color 250ms var(--timing-function);
+}
+
+
+.form-icon {
+   fill: currentColor;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    color: #2F303A;
 }
