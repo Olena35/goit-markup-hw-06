@@ -285,6 +285,7 @@ ul {
 
 .button-studio {
     color:#FFFFFF;
+    height: 50px;
     background-color: var(--accent-color);
     font-family: inherit;
     font-size: 16px;
@@ -309,6 +310,7 @@ ul {
 
 .backdrop {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -330,7 +332,7 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px 39px 40px 41px;
+    padding: 40px 40px 40px 40px;
     transform: translate(-50%, -50%);
     width: 528px;
     background-color: #FFFFFF;
@@ -378,21 +380,22 @@ ul {
     fill: #2196F3;
 }
 
-
-
-
 .lets {
-    margin-bottom: 2px;
     color: #212121;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
     line-height: 1,15;
     letter-spacing: 0.6px;
-}
+} 
+
 
 .modal-form {
+    margin-top: 30px;
+}
 
+.form-group {
+     margin-bottom: 28px;
 }
 
 .wrapper-input {
@@ -411,6 +414,7 @@ ul {
 .wrapper-input:focus {
     outline: 1px solid var(--accent-color);
     outline-offset: -1px;
+    fill: #2196F3;
 } 
 
 
@@ -422,22 +426,12 @@ ul {
     fill: #212121;
 }
 
-.form-group:hover .form-modal-icon,
-.form-group:focus .form-modal-icon {
-    fill: #2196F3;
-}
-
-
-.form-group {
-    margin-top: 28px;
-}
 
 .form-group-massage {
-    margin-top: 28px;
+    margin-bottom: 20px;
 }
 
 .form-policy {
-    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -506,14 +500,14 @@ transform: translateY(-17px);
 }
 
 
+
 .custom-checkbox-icon {
     opacity: 0;
-
     transition: opacity 250ms var(--timing-function);
 }
 
 .checkbox:checked + .custom-checkbox {
-    outline: var(--timing-function);
+    outline: var(--accent-color);
 }
 
 .checkbox:checked + .custom-checkbox .custom-checkbox-icon {
@@ -596,6 +590,7 @@ padding-bottom: 94px;
     line-height: 1,14;
     letter-spacing: 0.42px; 
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .item {
@@ -1029,7 +1024,7 @@ address {
 .footer-box {
     display: flex;
     align-items: baseline;
-}
+} 
 
 .footer-part+.footer-part {
     margin-left: 70px;
@@ -1071,29 +1066,33 @@ address {
     background-color: #2196F3;
 }
 
+/* Форма для розсилки */
+
+.footer-submit {
+    width: 570px;
+    align-items: baseline;
+ margin-left: auto;
+}
+
 .social-footer {
     fill: #FFFFFF;
     margin-right: 0;
     margin-bottom: 0;
 }
 
+
 .email-form {
+display: flex;
+    margin-top: 20px;
+    gap: 12px;
     width: 358px;
     height: 50px;
     flex-shrink: 0;
 }
 
-.footer-submit {
-    width: 570px;
-    align-items: baseline;
-    margin-left: 93px;
-}
 
-.subscription {
-    display: flex;
-    margin-top: 20px;
-    gap: 12px;
-}
+
+
 
 
 
